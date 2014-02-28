@@ -1,8 +1,8 @@
 ﻿#ifndef FG4CPP_DEF_COMMON_PRIMITIVES_H
 #define FG4CPP_DEF_COMMON_PRIMITIVES_H
 
-#include "fg/def/common/primitives.h"
 #include "fgpp/def/common/primitives.h"
+#include "fg/def/common/primitives.h"
 
 namespace fg {
     inline const FgString * toFg(
