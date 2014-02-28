@@ -23,4 +23,7 @@ def build( _context ):
                 },
             },
         },
+        {
+            'fg-strconv',
+        },
     )
