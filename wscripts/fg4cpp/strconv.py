@@ -16,6 +16,7 @@ def build( _context ):
                 common.FG4CPP : {
                     _MODULE_NAME : {
                         'tostring.cpp',
+                        'toutf8.cpp',
                     },
                 },
             },
