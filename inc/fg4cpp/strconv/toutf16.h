@@ -11,10 +11,14 @@ namespace fg {
         toUtf16(
             Utf16 &             _to
             , const String &    _FROM
+            , Size &            _outputLength
+            , Size &            _inputLength
         )
         , fgToUtf16FromString(
             toFg( &_to )
             , toFg( &_FROM )
+            , &_outputLength
+            , &_inputLength
         )
     )
 
@@ -22,10 +26,14 @@ namespace fg {
         toUtf16(
             Utf16 &         _to
             , const Utf8 &  _FROM
+            , Size &        _outputLength
+            , Size &        _inputLength
         )
         , fgToUtf16FromUtf8(
             toFg( &_to )
             , toFg( &_FROM )
+            , &_outputLength
+            , &_inputLength
         )
     )
 
@@ -33,10 +41,14 @@ namespace fg {
         toUtf16(
             Utf16 &         _to
             , const Utf32 & _FROM
+            , Size &        _outputLength
+            , Size &        _inputLength
         )
         , fgToUtf16FromUtf32(
             toFg( &_to )
             , toFg( &_FROM )
+            , &_outputLength
+            , &_inputLength
         )
     )
 }

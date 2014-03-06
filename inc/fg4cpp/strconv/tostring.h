@@ -19,10 +19,14 @@ namespace fg {
         toString(
             String &        _to
             , const Utf8 &  _FROM
+            , Size &        _outputLength
+            , Size &        _inputLength
         )
         , fgToStringFromUtf8(
             toFg( &_to )
             , toFg( &_FROM )
+            , &_outputLength
+            , &_inputLength
         )
     )
 
@@ -30,10 +34,14 @@ namespace fg {
         toString(
             String &        _to
             , const Utf16 & _FROM
+            , Size &        _outputLength
+            , Size &        _inputLength
         )
         , fgToStringFromUtf16(
             toFg( &_to )
             , toFg( &_FROM )
+            , &_outputLength
+            , &_inputLength
         )
     )
 
@@ -41,10 +49,14 @@ namespace fg {
         toString(
             String &        _to
             , const Utf32 & _FROM
+            , Size &        _outputLength
+            , Size &        _inputLength
         )
         , fgToStringFromUtf32(
             toFg( &_to )
             , toFg( &_FROM )
+            , &_outputLength
+            , &_inputLength
         )
     )
 }
