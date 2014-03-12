@@ -1,7 +1,7 @@
 ﻿#ifndef FG4CPP_UTIL_DEFINEFUNCTION_H
 #define FG4CPP_UTIL_DEFINEFUNCTION_H
 
-#include "fgpp/def/common/primitives.h"
+#include "fg4cpp/def/common/primitives.h"
 
 #define FG4CPP_DEFINE_FUNCTION( _func, _returnType, _proc ) \
     FG4CPPINLINE _returnType _func { _proc }
