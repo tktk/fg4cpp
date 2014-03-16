@@ -35,7 +35,6 @@ def _build(
         lib = _libraries,
         includes = _context.env.MY_INCLUDES,
         libpath = _context.env.MY_LIBPATH,
-        rpath = _context.env.MY_RPATH,
         defines = _context.env.MY_DEFINES,
         cxxflags = _context.env.MY_CXXFLAGS,
         linkflags = _context.env.MY_LINKFLAGS,

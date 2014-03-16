@@ -251,7 +251,6 @@ def _configureLibpath( _context ):
     )
 
     _context.env.MY_LIBPATH = LIBPATH
-    _context.env.MY_RPATH = LIBPATH
 
 def _configureDefines( _context ):
     defines = None
