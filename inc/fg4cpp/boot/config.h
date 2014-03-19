@@ -4,6 +4,7 @@
 #include "fgpp/boot/config.h"
 #include "fg/boot/config.h"
 #include "fg4cpp/def/boot/config.h"
+#include "fg4cpp/def/common/primitives.h"
 #include "fg4cpp/util/inline.h"
 
 namespace fg {
@@ -21,6 +22,17 @@ namespace fg {
         )
         , fgBootConfigFree(
             toFg( &_config )
+        )
+    )
+
+    FG4CPP_FUNCTION_BOOL(
+        setMainFile(
+            BootConfig &    _config
+            , const Utf32 & _MAIN_FILE
+        )
+        , fgBootConfigSetMainFile(
+            toFg( &_config )
+            , toFg( &_MAIN_FILE )
         )
     )
 }
