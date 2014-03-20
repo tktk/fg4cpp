@@ -46,6 +46,17 @@ namespace fg {
             , toFg( &_MAIN_TYPE )
         )
     )
+
+    FG4CPP_FUNCTION_BOOL(
+        setMain(
+            BootConfig &    _config
+            , const Utf32 & _MAIN
+        )
+        , fgBootConfigSetMain(
+            toFg( &_config )
+            , toFg( &_MAIN )
+        )
+    )
 }
 
 #endif  // FG4CPP_BOOT_CONFIG_H
