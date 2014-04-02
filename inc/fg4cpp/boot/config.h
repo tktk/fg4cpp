@@ -26,6 +26,17 @@ namespace fg {
     )
 
     FG4CPP_FUNCTION_BOOL(
+        setLoader(
+            BootConfig &    _config
+            , const Utf32 & _LOADER
+        )
+        , fgBootConfigSetLoader(
+            toFg( &_config )
+            , toFg( &_LOADER )
+        )
+    )
+
+    FG4CPP_FUNCTION_BOOL(
         setMainFile(
             BootConfig &    _config
             , const Utf32 & _MAIN_FILE
